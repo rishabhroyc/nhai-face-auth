@@ -1,0 +1,41 @@
+{
+  "name": "NHAIFaceAuth",
+  "displayName": "NHAI Face Auth",
+  "expo": {
+    "name": "NHAI Face Authentication",
+    "slug": "nhai-face-auth",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nhai.faceauth",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access for face recognition attendance",
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to verify attendance location"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.nhai.faceauth",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
